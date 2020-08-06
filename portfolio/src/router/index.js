@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import Home from '@/components/Home';
 import Overview from '@/components/OverView/Overview.vue';
 import projects from '@/components/OverView/projects.vue';
+import Resume from '@/components/Resume.vue';
+import contact from '@/components/contact/contact.vue';
 
 Vue.use(Router);
 
@@ -25,13 +27,13 @@ export default new Router({
     },
     {
       path: '/resume',
-      name: 'overview',
-      component: Overview
+      name: 'resume',
+      component: Resume
     },
     {
       path: '/contact',
-      name: 'overview',
-      component: Overview
+      name: 'contact',
+      component: contact
     }
   ]
 });

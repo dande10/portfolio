@@ -22,7 +22,7 @@
         I have experience in various domains like commercial, banking, airline and,
          especially in the industrial industry. If you have any question about design/develop service, 
          or just want to say hello, feel free to contact me. You can email me at dande.vasanthi@gmail.com ,
-          or follow me at  linkedIn ;)
+          or follow me at  linkedIn :)
              </span> 
         </div> 
         <div class="col">

@@ -36,9 +36,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   text-align: center;
   overflow-x: hidden;
 }
-.application {
-  // &__components-container {    
-  //   min-height: calc(100vh - 110px);
-  // }
+.application__components-container {
+  // background: gray;
 }
 </style>
