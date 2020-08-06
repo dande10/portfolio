@@ -55,6 +55,26 @@ export default {
             id: 7,
             title: 'REACT',
             value: '60%'
+          },
+          {
+            id: 8,
+            title: 'Azure Devops',
+            value: '35%'
+          },
+          {
+            id: 9,
+            title: 'wire frames',
+            value: '60%'
+          },
+          {
+            id: 10,
+            title: 'Java',
+            value: '30%'
+          },
+          {
+            id: 11,
+            title: 'Jenkins',
+            value: '50%'
           }
         ]
       }
@@ -90,8 +110,9 @@ export default {
         padding: 5px;
         position: absolute;
         height: 35px;
-        width: 110px;
+        width: 150px;
         font-size: 14px;
+        text-transform: uppercase;
     }
     &__percentage {
         right: 0;
