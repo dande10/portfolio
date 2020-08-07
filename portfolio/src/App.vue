@@ -33,10 +33,27 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  text-align: center;
+  // text-align: center;
   overflow-x: hidden;
 }
-.application__components-container {
-  // background: gray;
+.application__components-container{
+  overflow-y: auto;
+  max-height: 100%;
 }
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #888;
+    border: 2px solid #eee;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  }
 </style>
