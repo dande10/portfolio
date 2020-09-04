@@ -13,5 +13,8 @@ export default {
     background: #141516;
     color: white;
     height: 43px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 </style>
