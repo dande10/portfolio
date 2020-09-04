@@ -21,8 +21,8 @@
         I do illustration, graphic design, animation, and front-end development. 
         I have experience in various domains like commercial, banking, airline and,
          especially in the industrial industry. If you have any question about design/develop service, 
-         or just want to say hello, feel free to contact me. You can email me at dande.vasanthi@gmail.com ,
-          or follow me at  linkedIn :)
+         or just want to say hello, feel free to contact me. You can email me at <span class="overview__about--text--email">dande.vasanthi@gmail.com</span>,
+          or follow me at  <a href="https://www.linkedin.com/in/vasanthi-dande-b2610015a/" target="_blank">linkedIn</a>
              </span> 
         </div> 
         <div class="col">
@@ -55,6 +55,9 @@ export default {
   &__about--text {
       margin-top: 70px;
       text-align: left;
+      &--email {
+        color : blue;
+      }
     }
   
 

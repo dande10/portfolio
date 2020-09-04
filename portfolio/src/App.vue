@@ -35,8 +35,9 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   text-align: center;
   overflow-x: hidden;
+  background: #dddd;
 }
 .application__components-container {
-  // background: gray;
+   min-height: calc(100vh - 110px);
 }
 </style>
