@@ -35,10 +35,10 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   // text-align: center;
   overflow-x: hidden;
+  background: #dddd;
 }
-.application__components-container{
-  overflow-y: auto;
-  max-height: 100%;
+.application__components-container {
+   min-height: calc(100vh - 110px);
 }
 ::-webkit-scrollbar {
     width: 5px;

@@ -11,15 +11,24 @@
                 <router-link to='/projects'>PROJECTS</router-link>
             </div>
             <div class="col">
-                <router-link to="/resume">RESUME</router-link>
+                <a href="https://github.com/dande10?tab=repositories">CODE</a>
             </div>
             <div class="col">
                 <router-link to="/contact">CONTACT</router-link>
             </div>
          </div>
          <div class="header-section__navigation--mobile-view">
-            <div class="col">
+           <button class="btn btn-secondary dropdown-toggle" 
+            type="link" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true"
+             aria-expanded="false">
                 <i class="fa fa-bars" @click="navMenu"/>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="/#/about">ABOUT</a>
+                <a class="dropdown-item" href="/#/projects">PROJECTS</a>
+                <a class="dropdown-item" href="https://github.com/dande10?tab=repositories">CODE</a>
+                <a class="dropdown-item" href="/#/contact">CONTACT</a>
             </div>
          </div>
     </div>
@@ -70,6 +79,13 @@ export default {
             @media screen and (max-width: 768px) {
                 display: inline;
                 margin-left: auto;
+            }
+            .dropdown-toggle {
+                background: none;
+                border: none;
+                &::after {
+                    display: none;
+                }
             }
         }
     }
