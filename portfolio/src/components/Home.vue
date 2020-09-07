@@ -1,27 +1,27 @@
 <template>
-<div class="home-page">
-  <div>
-    <h2>{{ $t('message') }}<span class="name">{{ $t('name') }}.</span></h2>
-    <h2>{{ $t('role') }}</h2>
+  <div class="home-page">
+    <div>
+      <h2>{{ $t('message') }}<span class="name">{{ $t('name') }}.</span></h2>
+      <h2>{{ $t('role') }}</h2>
+    </div>
+    <div>
+      <router-link to="/about">
+        <button class="btn btn-info fade-in">
+          {{ $t('button.text') }}&nbsp;<i class="fas fa-arrow-right" />
+        </button>
+      </router-link>
+    </div>
   </div>
-  <div>
-    <router-link to="/about">
-    <button class="btn btn-info fade-in">
-      {{ $t('button.text') }}&nbsp;<i class="fas fa-arrow-right"></i>
-    </button>
-    </router-link>
-  </div>
-</div>
 </template>
 
 <script>
 export default {
-  name: 'home',
-  data () {
+  name: 'Home',
+  data() {
     return {
-    }
+    };
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -1,24 +1,24 @@
 <template>
-    <div class="contact">
-        <form>
-            <div>
-                <label>Name</label>
-                <input type="text"/>
-            </div>
-             <div>
-                <label>Email</label>
-                <input type="email"/>
-            </div>
-            <div>
-                <label>Message</label>
-                <vue-editor v-model="content"></vue-editor>
-            </div>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+  <div class="contact">
+    <form>
+      <div>
+        <label>Name</label>
+        <input type="text">
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email">
+      </div>
+      <div>
+        <label>Message</label>
+        <vue-editor v-model="content" />
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
          
-    </div>
+  </div>
 </template>
 <script>
 import { VueEditor } from "vue2-editor";
@@ -26,14 +26,13 @@ export default {
     components: {
      VueEditor
     },
-    name: 'contact',
+    name: 'Contact',
     data() {
       return {
           content: 'Type Here...'
-      }
-    }
-    
-}
+      };
+    }    
+};
 </script>
 <style scoped lang="scss">
 .projects {
