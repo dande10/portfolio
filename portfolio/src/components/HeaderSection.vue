@@ -1,52 +1,52 @@
 <template>
-    <div class="row header-section__row">
-        <div class="col-6 header-section__first">
-            <h2><router-link to="/" class="header-section__first">{{ $t('name') }}</router-link></h2>
-         </div>
-         <div class="header-section__navigation">
-            <div class="col">
-                <router-link to="/about"> ABOUT </router-link>
-            </div>
-            <div class="col">
-                <router-link to='/projects'>PROJECTS</router-link>
-            </div>
-            <div class="col">
-                <a href="https://github.com/dande10?tab=repositories">CODE</a>
-            </div>
-            <div class="col">
-                <router-link to="/contact">CONTACT</router-link>
-            </div>
-         </div>
-         <div class="header-section__navigation--mobile-view">
-           <button class="btn btn-secondary dropdown-toggle" 
-            type="link" id="dropdownMenuButton" 
-            data-toggle="dropdown" aria-haspopup="true"
-             aria-expanded="false">
-                <i class="fa fa-bars" @click="navMenu"/>
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="/#/about">ABOUT</a>
-                <a class="dropdown-item" href="/#/projects">PROJECTS</a>
-                <a class="dropdown-item" href="https://github.com/dande10?tab=repositories">CODE</a>
-                <a class="dropdown-item" href="/#/contact">CONTACT</a>
-            </div>
-         </div>
+  <div class="row header-section__row">
+    <div class="col-6 header-section__first">
+      <h2><router-link to="/" class="header-section__first">{{ $t('name') }}</router-link></h2>
     </div>
+    <div class="header-section__navigation">
+      <div class="col">
+        <router-link to="/about"> ABOUT </router-link>
+      </div>
+      <div class="col">
+        <router-link to='/projects'>PROJECTS</router-link>
+      </div>
+      <div class="col">
+        <a href="https://github.com/dande10?tab=repositories">CODE</a>
+      </div>
+      <div class="col">
+        <router-link to="/contact">CONTACT</router-link>
+      </div>
+    </div>
+    <div class="header-section__navigation--mobile-view">
+      <button class="btn btn-secondary dropdown-toggle" 
+              type="link" id="dropdownMenuButton" 
+              data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+        <i class="fa fa-bars" @click="navMenu" />
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="/#/about">ABOUT</a>
+        <a class="dropdown-item" href="/#/projects">PROJECTS</a>
+        <a class="dropdown-item" href="https://github.com/dande10?tab=repositories">CODE</a>
+        <a class="dropdown-item" href="/#/contact">CONTACT</a>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 export default {
-    name: 'header-section',
-    data (){
+    name: 'HeaderSection',
+    data(){
         return {
             navMenuShow: false
-        }
+        };
     },
     methods: {
        navMenu: function(){
            this.navMenuShow = true;
        }
     }
-}
+};
 </script>
 <style scoped lang="scss">
 .header-section {

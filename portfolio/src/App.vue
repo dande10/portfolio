@@ -1,16 +1,16 @@
 <template>
   <div id="app" class="application">
-     <HeaderSection v-if="!(this.$route.path =='/')"/>
-    <router-view class="application__components-container"/>
-    <ParticlesJS v-if="this.$route.path =='/'"/>
-    <FooterSection v-if="!(this.$route.path =='/')"/>
+    <HeaderSection v-if="!(this.$route.path =='/')" />
+    <router-view :class="{'application__components-container': !(this.$route.path =='/')}" />
+    <ParticlesJS v-if="this.$route.path =='/'" />
+    <FooterSection v-if="!(this.$route.path =='/')" />
   </div>
 </template>
 
 <script>
-import ParticlesJS from '@/components/ParticlesJS'
-import HeaderSection from '@/components/HeaderSection.vue'
-import FooterSection from '@/components/FooterSection.vue'
+import ParticlesJS from '@/components/ParticlesJS';
+import HeaderSection from '@/components/HeaderSection.vue';
+import FooterSection from '@/components/FooterSection.vue';
 export default {
   name: 'App',
   components: {
@@ -18,7 +18,7 @@ export default {
     FooterSection,
     HeaderSection
   }
-}
+};
 </script>
 
 <style lang="scss">

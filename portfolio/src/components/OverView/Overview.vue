@@ -13,34 +13,34 @@
     </div> -->
     <div class="container">
       <div class="overview__about-title">
-      {{ $t('overView.title') }}
-    </div>
-     <div class="row mobile-row">
+        {{ $t('overView.title') }}
+      </div>
+      <div class="row mobile-row">
         <div class="col" style="display: flex;">
-           <span class="overview__about--text">
-               My name is Vasanthi Dande, and I am a Front end developer for Snap IT solutions INC in Houston, TX. 
-        I do illustration, graphic design, animation, and front-end development. 
-        I have experience in various domains like commercial, banking, airline and,
-         especially in the industrial industry. If you have any question about design/develop service, 
-         or just want to say hello, feel free to contact me. You can email me at <span class="overview__about--text--email">dande.vasanthi@gmail.com</span>,
-          or follow me at  <a href="https://www.linkedin.com/in/vasanthi-dande-b2610015a/" target="_blank">linkedIn</a>
-             </span> 
+          <span class="overview__about--text">
+            My name is Vasanthi Dande, and I am a Front end developer for Snap IT solutions INC in Houston, TX. 
+            I do illustration, graphic design, animation, and front-end development. 
+            I have experience in various domains like commercial, banking, airline and,
+            especially in the industrial industry. If you have any question about design/develop service, 
+            or just want to say hello, feel free to contact me. You can email me at <span class="overview__about--text--email">dande.vasanthi@gmail.com</span>,
+            or follow me at  <a href="https://www.linkedin.com/in/vasanthi-dande-b2610015a/" target="_blank">linkedIn</a>
+          </span> 
         </div> 
         <div class="col">
           <ProgressBar /> 
         </div>           
-     </div>
+      </div>
     </div>
   </div>
 </template>
 <script>
-import ProgressBar from '../ProgressBar'
+import ProgressBar from '../ProgressBar';
 export default {
-    name: 'overview',
+    name: 'Overview',
     components: {
       ProgressBar
     }
-}
+};
 </script>
 <style scoped lang="scss">
 .overview {

@@ -1,20 +1,19 @@
 <template>
-    <div id="particles-js">
-    </div>
+  <div id="particles-js" />
 </template>
 <script>
 export default {
   name: 'ParticlesJS',
 
-  mounted () {
-    require('particles.js')
+  mounted() {
+    require('particles.js');
     this.$nextTick(() => {
-      this.initParticlesJS()
-    })
+      this.initParticlesJS();
+    });
   },
 
   methods: {
-    initParticlesJS () {
+    initParticlesJS() {
       /* eslint-disable */
       particlesJS('particles-js', {
         'particles': {

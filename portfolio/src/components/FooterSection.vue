@@ -1,12 +1,12 @@
 <template>
-    <div class="footer-section">
-        {{$t('footer.copyRight')}}
-    </div>
+  <div class="footer-section">
+    {{ $t('footer.copyRight') }}
+  </div>
 </template>
 <script>
 export default {
-    name: 'footer-section'
-}
+    name: 'FooterSection'
+};
 </script>
 <style lang="scss" scoped>
 .footer-section {

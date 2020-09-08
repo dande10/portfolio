@@ -1,24 +1,22 @@
 <template>
-   <div class="progressBar">
-     <div class="progressBar__bar-skill" v-for="(skill, idx) in getSkills" v-bind:key="idx">
-        <div class="progressBar__each-skill">
-            <div class="progressBar__title">
-                {{ skill.title }}
-            </div>
-            <div class="progressBar__progressValue" :style="{'width' : skill.value}">
-
-            </div>
-            <div class="progressBar__percentage">
-                {{ skill.value }}
-            </div>
+  <div class="progressBar">
+    <div class="progressBar__bar-skill" v-for="(skill, idx) in getSkills" :key="idx">
+      <div class="progressBar__each-skill">
+        <div class="progressBar__title">
+          {{ skill.title }}
         </div>
+        <div class="progressBar__progressValue" :style="{'width' : skill.value}" />
+        <div class="progressBar__percentage">
+          {{ skill.value }}
+        </div>
+      </div>
     </div>       
-   </div>
+  </div>
 </template>
 <script>    
 export default {
-    name: 'progress-bar',
-    data (){
+    name: 'ProgressBar',
+    data(){
       return {
         skills: [
           {
@@ -77,14 +75,14 @@ export default {
             value: '50%'
           }
         ]
-      }
+      };
     },
     computed: {
         getSkills: function() {
-            return this.skills
+            return this.skills;
         }
     }
-}
+};
 </script>
 <style scoped lang="scss">
 @keyframes progressBar {

@@ -1,24 +1,22 @@
 <template>
-    <div class="projects">
-        <!-- <vue-editor v-model="content"></vue-editor> -->
-        <button>
-           <a href="../../../src/assets/DANDE_VASANTHI.docx" download="DANDE_VASANTHI.docx" >DownLoad Resume</a>
-        </button>
-        <div v-for="(item, index) in projects" :key="index">
-            <h3>{{item.title}}, {{item.city}}, {{item.state}}</h3>
-            <h5>{{item.name}}</h5>
-            <p v-html="item.value"></p>
-        </div>
-         
+  <div class="projects">
+    <!-- <vue-editor v-model="content"></vue-editor> -->
+    <button>
+      <a href="http://localhost:3000/src/assets/vasanthi.pdf" target="_blank" download>
+        DownLoad Resume
+      </a>
+    </button>
+    <div v-for="(item, index) in projects" :key="index">
+      <h3>{{ item.title }}, {{ item.city }}, {{ item.state }}</h3>
+      <h5>{{ item.name }}</h5>
+      <p v-html="item.value" />
     </div>
+         
+  </div>
 </template>
 <script>
-// import { VueEditor } from "vue2-editor";
 export default {
-    components: {
-     VueEditor
-    },
-    name: 'projects',
+    name: 'Projects',
     data() {
       return {
           content: "<h1>Some initial content</h1>",
@@ -63,10 +61,9 @@ export default {
 
              }
          ]
-      }
-    }
-    
-}
+      };
+    }    
+};
 </script>
 <style scoped lang="scss">
 .projects {
