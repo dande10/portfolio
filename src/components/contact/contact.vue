@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <form>
+    <!-- <form>
       <div>
         <label>Name</label>
         <input type="text">
@@ -16,7 +16,9 @@
       <div>
         <button type="submit">Submit</button>
       </div>
-    </form>
+    </form> -->
+    <h1>OK, Let's create something great</h1>
+    <button class="btn btn-info fade-in"><i class="fas fa-paper-plane" aria-hidden="true" /><a href="mailto:dande.vasanthi@gmail.com">GET IN TOUCH</a></button>
          
   </div>
 </template>
@@ -35,11 +37,23 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-.projects {
-    text-align: left;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 5px 10px 18px #ccc
+.contact {
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    h1{
+      padding-right: 5px;
+    }
+    button{
+      a{
+        color: #fff;
+        text-decoration: none;
+        padding-left: 5px;
+      }
+    }
+
 }
 
 </style>
