@@ -7,7 +7,7 @@ import i18n from './i18n';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
@@ -16,4 +16,4 @@ new Vue({
   components: { App },
   i18n,
   template: '<App/>'
-})
+});
