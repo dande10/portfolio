@@ -11,7 +11,7 @@
     </div>
     <div class="list-of-projects row container">
       <div class="card-item" v-for="(item, i) in ProjectsList" :key="`${i}-${item.id}`">
-        <card :item="item"/>      
+        <card :item="item" />      
       </div>
     </div>
     <!-- <div v-for="(item, index) in projects" :key="index">
@@ -77,27 +77,71 @@ export default {
            {
              id:1,
              image: 'onpoint-home.png',
-             title: 'OnPoint'
+             title: 'OnPoint',
+             modal: {
+               images: [
+                 {
+                   image: 'onpoint-home.png'
+                 }
+               ],
+               title: 'OnPoint - A Koch Engineered Solutions Company',
+               discription: 'The application is built from the scratch using Vue and Vuex using NUXT framework.which is Permission based dashboard portal for assets and reports of customers so customers can able to access burners also they can see site location using google maps in that portal. facilities to manage permission of the users on the customer data, for the deployments we are using aws cloud platform.',
+               link: 'https://onpoint-portal.kesportaldev.com/'
+             }
            },
            {
              id:2,
              image: 'honey-well.png',
-             title: 'Honey well Business'
+             title: 'Honey well Business',
+             modal: {
+               images: [
+                 {image: 'onpoint-home.png'},
+                 {image: 'honey-well.png'},
+                 {image: 'onpoint-home.png'}
+               ],
+               title: 'Honeywell',
+               discription: 'The application is built from the scratch using Vue and Vuex using NUXT framework.which is Permission based dashboard portal for assets and reports of customers so customers can able to access burners also they can see site location using google maps in that portal. facilities to manage permission of the users on the customer data, for the deployments we are using aws cloud platform.',
+               link: 'https://onpoint-portal.kesportaldev.com/'
+             }
            },
            {
              id:3,
              image: 'carrier-home.png',
-             title: 'Carrier Bryant'
+             title: 'Carrier Bryant',
+             modal: {
+               images: [
+                 {image: 'onpoint-home.png'}
+               ],
+               title: 'Honeywell',
+               discription: 'The application is built from the scratch using Vue and Vuex using NUXT framework.which is Permission based dashboard portal for assets and reports of customers so customers can able to access burners also they can see site location using google maps in that portal. facilities to manage permission of the users on the customer data, for the deployments we are using aws cloud platform.',
+               link: 'https://onpoint-portal.kesportaldev.com/'
+             }
            },
            {
              id:4,
              image: 'redbox-ondemand.png',
-             title: 'RedBox'
+             title: 'RedBox',
+             modal: {
+               images: [
+                 {image: 'onpoint-home.png'}
+               ],
+               title: 'Honeywell',
+               discription: 'The application is built from the scratch using Vue and Vuex using NUXT framework.which is Permission based dashboard portal for assets and reports of customers so customers can able to access burners also they can see site location using google maps in that portal. facilities to manage permission of the users on the customer data, for the deployments we are using aws cloud platform.',
+               link: 'https://onpoint-portal.kesportaldev.com/'
+             }
            },
            {
              id:5,
              image: 'delta-trip-coverage.png',
-             title: 'Trip Coverage Report'
+             title: 'Trip Coverage Report',
+             modal: {
+               images: [
+                 {image: 'onpoint-home.png'}
+               ],
+               title: 'Honeywell',
+               discription: 'The application is built from the scratch using Vue and Vuex using NUXT framework.which is Permission based dashboard portal for assets and reports of customers so customers can able to access burners also they can see site location using google maps in that portal. facilities to manage permission of the users on the customer data, for the deployments we are using aws cloud platform.',
+               link: 'https://onpoint-portal.kesportaldev.com/'
+             }
            }
          ]
       };

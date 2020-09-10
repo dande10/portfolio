@@ -18,7 +18,10 @@
       </div>
     </form> -->
     <h1>OK, Let's create something great</h1>
-    <button class="btn btn-info fade-in"><i class="fas fa-paper-plane" aria-hidden="true" /><a href="mailto:dande.vasanthi@gmail.com">GET IN TOUCH</a></button>
+
+    <button class="btn btn-info fade-in"><i class="fas fa-paper-plane" aria-hidden="true" />
+      <a href="mailto:dande.vasanthi@gmail.com">GET IN TOUCH</a>
+    </button>
          
   </div>
 </template>
@@ -38,11 +41,8 @@ export default {
 </script>
 <style scoped lang="scss">
 .contact {
-    width: 60%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  text-align: center;
+  margin-top: 20rem;
     h1{
       padding-right: 5px;
     }
