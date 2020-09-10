@@ -1,8 +1,8 @@
 <template>
   <div class="card-modal">
     <div class="modal-container">
-     <div class="card">
-      <!-- <div class="card-img-top"> -->
+      <div class="card">
+        <!-- <div class="card-img-top"> -->
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item" v-for="(image,index) in imageList" :key="`${index}-${image.id}`">
@@ -11,13 +11,13 @@
             </div>
           </div>
         </div>
-      <!-- </div> -->
+        <!-- </div> -->
         <div class="card-body">
-            <h5 class="card-title">{{ itemList.title }}</h5>
-            <p class="card-text">{{ itemList.discription }}</p>
-            <a :href="itemList.link" class="btn btn-info fade-in" target="_blank">View Site <i class="fas fa-paper-plane" aria-hidden="true" /></a>
+          <h5 class="card-title">{{ itemList.title }}</h5>
+          <p class="card-text">{{ itemList.discription }}</p>
+          <a :href="itemList.link" class="btn btn-info fade-in" target="_blank">View Site <i class="fas fa-paper-plane" aria-hidden="true" /></a>
         </div>
-     </div>
+      </div>
     </div>
    
   </div>
