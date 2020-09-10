@@ -59,6 +59,9 @@ export default {
         text-align: left;
         color: #e31b6d;
         text-decoration: none;
+        @media screen and (max-width:768px) {
+          font-size: 22px;
+         }  
     }
     &__navigation {
         display: flex;
@@ -83,6 +86,7 @@ export default {
             .dropdown-toggle {
                 background: none;
                 border: none;
+                padding-right: 20px;
                 &::after {
                     display: none;
                 }

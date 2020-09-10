@@ -1,33 +1,38 @@
 <template>
   <div class="card-modal">
-    <div class="modal-container">
-      <div class="card">
-        <!-- <div class="card-img-top"> -->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item" v-for="(image,index) in imageList" :key="`${index}-${image.id}`">
-              <!-- <ImageSection :item="image" /> -->
-              <img :src="require('../../assets/'+ image.image)">   
-            </div>
+      
+    <div class="modal-container container">
+        
+      <div class="card"> 
+        <div class="close" @click="$emit('close')">x</div>           
+        <VueSlickCarousel :arrows="true" :dots="true">
+          <div v-for="(image,index) in imageList" :key="`${index}-${image.id}`">
+            <img class="w-100" :src="require('../../assets/'+ image.image)">
           </div>
-        </div>
-        <!-- </div> -->
+        </VueSlickCarousel>
+            
         <div class="card-body">
-          <h5 class="card-title">{{ itemList.title }}</h5>
+          <h3 class="card-title">{{ itemList.title }}</h3>
           <p class="card-text">{{ itemList.discription }}</p>
           <a :href="itemList.link" class="btn btn-info fade-in" target="_blank">View Site <i class="fas fa-paper-plane" aria-hidden="true" /></a>
         </div>
       </div>
     </div>
-   
   </div>
+   
+  <!-- </div> -->
 </template>
 <script>
 import ImageSection from './ImageSection.vue';
+import VueSlickCarousel from 'vue-slick-carousel';
+  import 'vue-slick-carousel/dist/vue-slick-carousel.css';
+  import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
 export default {
     name: 'CardModal',
     components: {
-        Image
+        ImageSection,
+        VueSlickCarousel
+
     },
     props: {
         itemList: {
@@ -60,14 +65,23 @@ export default {
     transition: opacity 0.3s ease;
 
     .modal-container{
-        width: 300px;
-  margin: 0px auto;
-  padding: 20px 30px;
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-  transition: all 0.3s ease;
-  font-family: Helvetica, Arial, sans-serif;
+        margin: 0px auto;
+        padding: 20px 30px;
+        background-color: #fff;
+        border-radius: 2px;
+        top: 50%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+        transition: all 0.3s ease;
+
+        .close{
+            text-align: right;
+            cursor: pointer;
+        }
+        .card {
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            border: none;
+        }
     }
  }
 

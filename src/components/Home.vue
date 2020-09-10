@@ -32,6 +32,14 @@ export default {
   transform: translate(-50%, -50%);
   position: absolute;
   color: white;
+  width: 100%;
+  text-align: center;
+  @media screen and (max-width:768px) {
+    h2{
+      font-size: 1.5rem;
+    }
+  }
+          
   .name {
      color: #e31b6d;
   }

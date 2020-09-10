@@ -6,7 +6,7 @@
       <p class="card-text" />
       <a href="#" class="btn btn-info fade-in" @click="openModal">Quick Look</a>
     </div>
-    <card-modal v-if="modalShow" :item-list="item.modal" />
+    <card-modal v-if="modalShow" :item-list="item.modal" @close="modalShow = false" />
   </div>
 </template>
 <script>
