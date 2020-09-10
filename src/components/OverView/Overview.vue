@@ -37,7 +37,7 @@ export default {
     }
   }
   &__about-title {
-    font-size: 20px;
+    font-size: 30px;
     padding: 20px;
     font-weight: 600;
     text-align: center;

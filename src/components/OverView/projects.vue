@@ -1,14 +1,13 @@
 <template>
   <div class="projects">
-    <!-- <vue-editor v-model="content"></vue-editor> -->
     <div class="button-info">
       <button class="btn btn-info fade-in">
         <a href="https://docs.google.com/document/d/1u-fsQlWF0vEGIpmHJZEQCp9Wrf9TgWzvzJ7MSMN1D2o/export?format=pdf" target="_blank" download>
           DownLoad Resume
         </a>
       </button>
-
     </div>
+    <h3 class="projects__title">PROJECTS</h3>
     <div class="list-of-projects row container">
       <div class="card-item" v-for="(item, i) in ProjectsList" :key="`${i}-${item.id}`">
         <card :item="item" />      
@@ -82,7 +81,9 @@ export default {
                images: [
                  {
                    image: 'onpoint-home.png'
-                 }
+                 },
+                 {image: 'onpoint-widget.png'},
+                 {image: 'onpoint-charts.png'}
                ],
                title: 'OnPoint - A Koch Engineered Solutions Company',
                discription: 'The application is built from the scratch using Vue and Vuex using NUXT framework.which is Permission based dashboard portal for assets and reports of customers so customers can able to access burners also they can see site location using google maps in that portal. facilities to manage permission of the users on the customer data, for the deployments we are using aws cloud platform.',
@@ -95,13 +96,13 @@ export default {
              title: 'Honey well Business',
              modal: {
                images: [
-                 {image: 'onpoint-home.png'},
                  {image: 'honey-well.png'},
-                 {image: 'onpoint-home.png'}
+                 {image: 'become-distributor.png'},
+                 {image: 'honey-well-become-dealer.png'}
                ],
                title: 'Honeywell',
-               discription: 'The application is built from the scratch using Vue and Vuex using NUXT framework.which is Permission based dashboard portal for assets and reports of customers so customers can able to access burners also they can see site location using google maps in that portal. facilities to manage permission of the users on the customer data, for the deployments we are using aws cloud platform.',
-               link: 'https://onpoint-portal.kesportaldev.com/'
+               discription: 'Project scope is Re-design the entire existing application with multiple languages in different countries using vuejs2 and Laravel framework and PHP Working on Large application that allows users to find commercials providers and their manage year Sales. Working as part of a Agile team on a Vue application with a strong focus on VueX, JavaScript, ES6 layout based on Foundation, Git version control with Jest unit testing.',
+               link: 'https://www.ourbusinessbuilder.com/login'
              }
            },
            {
@@ -110,11 +111,13 @@ export default {
              title: 'Carrier Bryant',
              modal: {
                images: [
-                 {image: 'onpoint-home.png'}
+                 {image: 'carrier-login.png'},
+                 {image: 'carrier-home.png'},
+                 {image: 'carrier-trip.png'}
                ],
-               title: 'Honeywell',
-               discription: 'The application is built from the scratch using Vue and Vuex using NUXT framework.which is Permission based dashboard portal for assets and reports of customers so customers can able to access burners also they can see site location using google maps in that portal. facilities to manage permission of the users on the customer data, for the deployments we are using aws cloud platform.',
-               link: 'https://onpoint-portal.kesportaldev.com/'
+               title: 'Carrier Bryant Presidents Club',
+               discription: 'Project scope is Re-design the entire existing application with multiple languages in different countries using vuejs2 and Laravel framework and PHP Working on Large application that allows users to find commercials providers and their manage year Sales. Working as part of a Agile team on a Vue application with a strong focus on VueX, JavaScript, ES6 layout based on Foundation, Git version control with Jest unit testing.',
+               link: 'https://carrier-bryantpresidentsclub.com/user/login'
              }
            },
            {
@@ -123,11 +126,12 @@ export default {
              title: 'RedBox',
              modal: {
                images: [
-                 {image: 'onpoint-home.png'}
+                 {image: 'redbox-ondemand.png'},
+                 {image: 'play-trailer.png'}
                ],
-               title: 'Honeywell',
-               discription: 'The application is built from the scratch using Vue and Vuex using NUXT framework.which is Permission based dashboard portal for assets and reports of customers so customers can able to access burners also they can see site location using google maps in that portal. facilities to manage permission of the users on the customer data, for the deployments we are using aws cloud platform.',
-               link: 'https://onpoint-portal.kesportaldev.com/'
+               title: 'RedBox',
+               discription: 'React JS application development with Redux. A responsive, high traffic web site built using Webpack and unit tests in Jest. Github for version control with code review and CI integration. Using ES6, Accessible semantic HTML5 and CSS3 (SCSS) on an agile scrum team.',
+               link: 'https://www.redbox.com/ondemand-movies/featured'
              }
            },
            {
@@ -136,11 +140,11 @@ export default {
              title: 'Trip Coverage Report',
              modal: {
                images: [
-                 {image: 'onpoint-home.png'}
+                 {image: 'delta-trip-coverage.png'}
                ],
-               title: 'Honeywell',
-               discription: 'The application is built from the scratch using Vue and Vuex using NUXT framework.which is Permission based dashboard portal for assets and reports of customers so customers can able to access burners also they can see site location using google maps in that portal. facilities to manage permission of the users on the customer data, for the deployments we are using aws cloud platform.',
-               link: 'https://onpoint-portal.kesportaldev.com/'
+               title: 'Delta Airlines',
+               discription: 'In this Project, I worked on building a single page responsive application for Delta.com. Used by customers to save their personal information like phone number, email address, passport information, mailing address, etc. It is basically revolved around updating the look and responsiveness of the current existing application',
+               link: 'https://www.delta.com/?Log=1&mkcpgn=sezzzggusabsfipribd&clickid=_k_Cj0KCQjw-uH6BRDQARIsAI3I-UdqBAubP7RufsQ1ICJ0MlVE-I6AXvKQ-wOYmJKqR4sRHq-bSpZD4SwaAjzVEALw_wcB_k_&tracking_id=284x10603662&ad_id=459199346545&s_kwcid=TC%7C%20delta%20%20trips%7C%7CS%7Cb%7C459199346545&campaign=9732535595&adgroup=98535555286&gclid=Cj0KCQjw-uH6BRDQARIsAI3I-UdqBAubP7RufsQ1ICJ0MlVE-I6AXvKQ-wOYmJKqR4sRHq-bSpZD4SwaAjzVEALw_wcB'
              }
            }
          ]
@@ -160,6 +164,10 @@ export default {
         color: #fff;
         text-decoration: none;
       }
+    }
+    &__title{
+      font-weight: 600;
+      text-align: center;
     }
     .list-of-projects{
       display: flex;
