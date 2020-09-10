@@ -1,25 +1,37 @@
 <template>
   <div class="projects">
     <!-- <vue-editor v-model="content"></vue-editor> -->
-    <button>
-      <a href="http://localhost:3000/src/assets/vasanthi.pdf" target="_blank" download>
-        DownLoad Resume
-      </a>
-    </button>
-    <div v-for="(item, index) in projects" :key="index">
+    <div class="button-info">
+      <button class="btn btn-info fade-in">
+        <a href="https://docs.google.com/document/d/1u-fsQlWF0vEGIpmHJZEQCp9Wrf9TgWzvzJ7MSMN1D2o/export?format=pdf" target="_blank" download>
+          DownLoad Resume
+        </a>
+      </button>
+
+    </div>
+    <div class="list-of-projects row container">
+      <div class="card-item" v-for="(item, i) in ProjectsList" :key="`${i}-${item.id}`">
+        <card :item="item"/>      
+      </div>
+    </div>
+    <!-- <div v-for="(item, index) in projects" :key="index">
       <h3>{{ item.title }}, {{ item.city }}, {{ item.state }}</h3>
       <h5>{{ item.name }}</h5>
       <p v-html="item.value" />
-    </div>
+    </div> -->
          
   </div>
 </template>
 <script>
+import card from './card.vue';
 export default {
     name: 'Projects',
+    components: {
+      card
+    },
     data() {
       return {
-          content: "<h1>Some initial content</h1>",
+        content: "<h1>Some initial content</h1>",
          projects: [
              {
                  title: "OnPoint - A Koch Engineered Solutions Company",
@@ -60,9 +72,36 @@ export default {
                  value:"<ul><li>It is scratch application and provided all business environment tools to set up the application</li><li>Involved in various phases of project development following Agile Software Development</li><li>Methodology and Test-Driven Development (TDD) to build the application</li><li>Experience in working with HTML5 canvas element to create work flow chart with libraries and framework</li><li>Extensively used TypeScript, jQuery, Angular JS 2 to provide UI functionality</li><li>Experience of consuming Web services and RESTful Services</li><li>Designed and developed Micro Services business components using Spring</li><li>Involved in the development of Microservices for all the models using combination of Spring Boot and Spring Security</li></ul>"
 
              }
+         ],
+         ProjectsList:[
+           {
+             id:1,
+             image: 'onpoint-home.png',
+             title: 'OnPoint'
+           },
+           {
+             id:2,
+             image: 'honey-well.png',
+             title: 'Honey well Business'
+           },
+           {
+             id:3,
+             image: 'carrier-home.png',
+             title: 'Carrier Bryant'
+           },
+           {
+             id:4,
+             image: 'redbox-ondemand.png',
+             title: 'RedBox'
+           },
+           {
+             id:5,
+             image: 'delta-trip-coverage.png',
+             title: 'Trip Coverage Report'
+           }
          ]
       };
-    }    
+    }   
 };
 </script>
 <style scoped lang="scss">
@@ -70,7 +109,22 @@ export default {
     text-align: left;
     padding: 10px;
     margin: 10px;
-    box-shadow: 5px 10px 18px #ccc
+    box-shadow: 5px 10px 18px #ccc;
+    .button-info {
+      text-align: right;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .list-of-projects{
+      display: flex;
+      width: 100%;
+      .card-item{
+       margin: 10px;
+      }
+
+    }
 }
 
 </style>

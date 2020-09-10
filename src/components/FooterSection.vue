@@ -16,5 +16,6 @@ export default {
     bottom: 0;
     position: fixed;
     width: 100%;
+    text-align: center;
 }
 </style>
