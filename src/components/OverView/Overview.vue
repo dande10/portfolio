@@ -13,7 +13,7 @@
             </i18n>
           </span>
         </div> 
-        <div class="col">
+        <div class="col progress-section">
           <ProgressBar /> 
         </div>           
       </div>
@@ -45,7 +45,11 @@ export default {
   &__about--text {
       margin-top: 70px;
       text-align: left;
-    }
+  }
+  .progress-section{
+    margin-bottom: 20px;
+    padding: 20px;
+  }
   
 
 }

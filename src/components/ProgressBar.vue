@@ -83,6 +83,11 @@ export default {
             id: 13,
             title: 'Node JS',
             value: '70%'
+          },
+          {
+            id: 13,
+            title: 'Jquery',
+            value: '80%'
           }
 
         ]

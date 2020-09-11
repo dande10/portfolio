@@ -116,7 +116,7 @@ export default {
                  {image: 'carrier-trip.png'}
                ],
                title: 'Carrier Bryant Presidents Club',
-               discription: 'Project scope is Re-design the entire existing application with multiple languages in different countries using vuejs2 and Laravel framework and PHP Working on Large application that allows users to find commercials providers and their manage year Sales. Working as part of a Agile team on a Vue application with a strong focus on VueX, JavaScript, ES6 layout based on Foundation, Git version control with Jest unit testing.',
+               discription: 'Project scope is Re-design the entire existing application with multiple languages in different countries using vuejs2 and PHP Working on this application that allows users can add recruiters up to 5 under the sales providers and their manage monthly Sales. Working as part of a Agile team on a Vue application with a strong focus on VueX, JavaScript, ES6 layout based on Foundation, Git version control.',
                link: 'https://carrier-bryantpresidentsclub.com/user/login'
              }
            },
