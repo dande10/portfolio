@@ -13,11 +13,6 @@
         <card :item="item" />      
       </div>
     </div>
-    <!-- <div v-for="(item, index) in projects" :key="index">
-      <h3>{{ item.title }}, {{ item.city }}, {{ item.state }}</h3>
-      <h5>{{ item.name }}</h5>
-      <p v-html="item.value" />
-    </div> -->
          
   </div>
 </template>

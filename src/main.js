@@ -5,11 +5,9 @@ import App from "./App";
 import router from "./router";
 import i18n from "./i18n";
 import "bootstrap";
-import VueSlickCarousel from "vue-slick-carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 Vue.config.productionTip = false;
-Vue.use(VueSlickCarousel);
 
 /* eslint-disable no-new */
 new Vue({
