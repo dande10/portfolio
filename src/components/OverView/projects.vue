@@ -13,6 +13,11 @@
         <card :item="item" />      
       </div>
     </div>
+    <!-- <div v-for="(item, index) in projects" :key="index">
+      <h3>{{ item.title }}, {{ item.city }}, {{ item.state }}</h3>
+      <h5>{{ item.name }}</h5>
+      <p v-html="item.value" />
+    </div> -->
          
   </div>
 </template>
@@ -122,7 +127,8 @@ export default {
              modal: {
                images: [
                  {image: 'redbox-ondemand.png'},
-                 {image: 'play-trailer.png'}
+                 {image: 'play-trailer.png'},
+                 {image: ''}
                ],
                title: 'RedBox',
                discription: 'React JS application development with Redux. A responsive, high traffic web site built using Webpack and unit tests in Jest. Github for version control with code review and CI integration. Using ES6, Accessible semantic HTML5 and CSS3 (SCSS) on an agile scrum team.',
@@ -135,7 +141,9 @@ export default {
              title: 'Trip Coverage Report',
              modal: {
                images: [
-                 {image: 'delta-trip-coverage.png'}
+                 {image: 'delta-trip-coverage.png'},
+                 {image: ''},
+                  {image: ''}
                ],
                title: 'Delta Airlines',
                discription: 'In this Project, I worked on building a single page responsive application for Delta.com. Used by customers to save their personal information like phone number, email address, passport information, mailing address, etc. It is basically revolved around updating the look and responsiveness of the current existing application',

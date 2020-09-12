@@ -6,17 +6,17 @@
         <div id="demo" class="carousel slide" data-ride="carousel">
           <ul class="carousel-indicators">
             <li data-target="#demo" v-if="imageList[0].image" data-slide-to="0" class="active" />
-            <li data-target="#demo" v-else-if="imageList[1].image" data-slide-to="1" />
-            <li data-target="#demo" v-else-if="imageList[2].image" data-slide-to="2" />
+            <li data-target="#demo" v-if="imageList[1].image" data-slide-to="1" />
+            <li data-target="#demo" v-if="imageList[2].image" data-slide-to="2" />
           </ul>
           <div class="carousel-inner">
             <div class="carousel-item active" v-if="imageList[0].image">
               <img class="w-100" :src="require('../../assets/'+ imageList[0].image)">
             </div>
-            <div class="carousel-item" v-else-if="imageList[1].image">
+            <div class="carousel-item" v-if="imageList[1].image">
               <img class="w-100" :src="require('../../assets/'+ imageList[1].image)">
             </div>
-            <div class="carousel-item" v-else-if="imageList[2].image">
+            <div class="carousel-item" v-if="imageList[2].image">
               <img class="w-100" :src="require('../../assets/'+ imageList[2].image)">
             </div>
           </div>
