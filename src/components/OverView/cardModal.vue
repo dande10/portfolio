@@ -1,16 +1,32 @@
 <template>
-  <div class="card-modal">
-      
-    <div class="modal-container container">
-        
+  <div class="card-modal">      
+    <div class="modal-container container">        
       <div class="card"> 
-        <div class="close" @click="$emit('close')">x</div>           
-        <VueSlickCarousel :arrows="true" :dots="true">
-          <div v-for="(image,index) in imageList" :key="`${index}-${image.id}`">
-            <img class="w-100" :src="require('../../assets/'+ image.image)">
+        <div class="close" @click="$emit('close')">x</div>        
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#demo" v-if="imageList[0].image" data-slide-to="0" class="active" />
+            <li data-target="#demo" v-else-if="imageList[1].image" data-slide-to="1" />
+            <li data-target="#demo" v-else-if="imageList[2].image" data-slide-to="2" />
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active" v-if="imageList[0].image">
+              <img class="w-100" :src="require('../../assets/'+ imageList[0].image)">
+            </div>
+            <div class="carousel-item" v-else-if="imageList[1].image">
+              <img class="w-100" :src="require('../../assets/'+ imageList[1].image)">
+            </div>
+            <div class="carousel-item" v-else-if="imageList[2].image">
+              <img class="w-100" :src="require('../../assets/'+ imageList[2].image)">
+            </div>
           </div>
-        </VueSlickCarousel>
-            
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon" />
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon" />
+          </a>
+        </div>            
         <div class="card-body">
           <h3 class="card-title">{{ itemList.title }}</h3>
           <p class="card-text">{{ itemList.discription }}</p>
@@ -19,21 +35,10 @@
       </div>
     </div>
   </div>
-   
-  <!-- </div> -->
 </template>
 <script>
-import ImageSection from './ImageSection.vue';
-import VueSlickCarousel from 'vue-slick-carousel';
-  import 'vue-slick-carousel/dist/vue-slick-carousel.css';
-  import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
 export default {
     name: 'CardModal',
-    components: {
-        ImageSection,
-        VueSlickCarousel
-
-    },
     props: {
         itemList: {
             type: Object,

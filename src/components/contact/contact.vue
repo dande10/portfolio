@@ -1,22 +1,6 @@
 <template>
   <div class="contact">
-    <!-- <form>
-      <div>
-        <label>Name</label>
-        <input type="text">
-      </div>
-      <div>
-        <label>Email</label>
-        <input type="email">
-      </div>
-      <div>
-        <label>Message</label>
-        <vue-editor v-model="content" />
-      </div>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-    </form> -->
+    
     <h1>OK, Let's create something great</h1>
 
     <button class="btn btn-info fade-in"><i class="fas fa-paper-plane" aria-hidden="true" />

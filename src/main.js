@@ -7,6 +7,9 @@ import i18n from "./i18n";
 import "bootstrap";
 import VueSlickCarousel from "vue-slick-carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import VueAwesomeSwiper from "vue-awesome-swiper";
+
+Vue.use(VueAwesomeSwiper);
 
 Vue.config.productionTip = false;
 Vue.use(VueSlickCarousel);
