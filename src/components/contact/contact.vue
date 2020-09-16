@@ -4,7 +4,7 @@
     <h1>OK, Let's create something great</h1>
 
     <button class="btn btn-info fade-in"><i class="fas fa-paper-plane" aria-hidden="true" />
-      <a href="mailto:dande.vasanthi@gmail.com">GET IN TOUCH</a>
+      <a href="mailto:dande.vasanthi@gmail.com?subject=Regarding New Projects">GET IN TOUCH</a>
     </button>
          
   </div>
