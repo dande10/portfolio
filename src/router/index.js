@@ -4,10 +4,11 @@ import Home from "@/components/Home";
 import Overview from "@/components/OverView/Overview.vue";
 import projects from "@/components/OverView/projects.vue";
 import contact from "@/components/contact/contact.vue";
+import NotFoundPage from "@/components/NotFoundPage.vue";
 
 Vue.use(Router);
 
-export default new Router({
+var router = new Router({
   mode: "history",
   routes: [
     {
@@ -29,6 +30,20 @@ export default new Router({
       path: "/contact",
       name: "contact",
       component: contact
+    },
+    {
+      path: "*",
+      component: NotFoundPage
     }
   ]
+});
+export default router;
+
+router.beforeEach((to, from, next) => {
+  if (to.fullPath.substr(0, 2) === "/#") {
+    const path = to.fullPath.substr(2);
+    next(path);
+    return;
+  }
+  next();
 });
