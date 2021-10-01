@@ -1,14 +1,11 @@
 <template>
-  <div class="not-found-page">
-     404 page.
-  </div>
+  <div class="not-found-page">404 page.</div>
 </template>
 <script>
 export default {
-  name: 'NotFoundPage',
+  name: "NotFoundPage",
   data() {
-    return {
-    };
+    return {};
   }
 };
 </script>
