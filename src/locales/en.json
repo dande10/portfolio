@@ -1,6 +1,6 @@
 {
   "message": "Hello, I'm",
-  "name":" Vasanthi Dande",
+  "name": " Vasanthi Dande",
   "role": "I'm a Front end developer.",
   "button": {
     "text": "See my work"
@@ -17,6 +17,6 @@
     "title": "CONTACT"
   },
   "footer": {
-    "copyRight": "VASANTHI DANDE ©2020"
+    "copyRight": "VASANTHI DANDE © {year}"
   }
 }
