@@ -8,7 +8,10 @@
   "overView": {
     "title": "ABOUT",
     "info": {
-      "text": "My name is Vasanthi Dande, and I am a Front end developer for Snap IT solutions INC in Houston, TX.I do illustration, graphic design, animation, and front-end development. I have experience in various domains like commercial, banking, airline and, especially in the industrial industry. If you have any question about design/develop service, or just want to say hello, feel free to contact me. You can email me at {0} or follow me at {1}",
+      "text1": "My name is Vasanthi Dande, and I am a Front end developer. Located in Houston, TX.",
+      "text2": "Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.",
+      "text": "I have experience in various domains like e-commerce, commercial, airline and industrial domain. If you have any question about developement service, or just want to say hello, feel free to contact me. You can email me at {0} or follow me at {1}.",
+      "text3": "I'm open to new Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.",
       "email": "dande.vasanthi@gmail.com",
       "linkedIn": "Linked In"
     }

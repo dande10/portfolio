@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-section">{{ $t('footer.copyRight', {year: year}) }}</div>
+  <div class="footer-section">{{ $t('footer.copyRight', { year: year }) }}</div>
 </template>
 <script>
 export default {
@@ -15,7 +15,7 @@ export default {
 .footer-section {
   background: #141516;
   color: white;
-  height: 43px;
+  padding: 10px;
   bottom: 0;
   position: fixed;
   width: 100%;

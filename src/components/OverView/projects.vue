@@ -1,13 +1,11 @@
+<!-- eslint-disable -->
 <template>
   <div class="projects">
     <div class="button-info">
-      <button class="btn btn-info fade-in">
-        <a
-          href="https://docs.google.com/document/d/1u-fsQlWF0vEGIpmHJZEQCp9Wrf9TgWzvzJ7MSMN1D2o/export?format=pdf"
-          target="_blank"
-          download
-        >DownLoad Resume</a>
-      </button>
+      <!-- <button class="btn btn-info fade-in">
+        <a href="https://docs.google.com/document/d/1u-fsQlWF0vEGIpmHJZEQCp9Wrf9TgWzvzJ7MSMN1D2o/export?format=pdf"
+          target="_blank" download>DownLoad Resume</a>
+      </button> -->
     </div>
     <h3 class="projects__title">PROJECTS</h3>
     <div class="list-of-projects row container">
@@ -35,11 +33,11 @@ export default {
         return response.text();
       })
       .then(obj => {
-        console.log(obj);
+        // console.log(obj);
         // resolve(data ? JSON.parse(data) : {});
       })
       .catch(error => {
-        console.log(error);
+        // console.log(error);
         // reject(error);
       });
   },
@@ -48,11 +46,21 @@ export default {
       content: "<h1>Some initial content</h1>",
       projects: [
         {
+          title: "Williams sonoma Inc",
+          city: "Remote",
+          state: "California",
+          start: "May-2021",
+          end: "",
+          name: "",
+          value:
+            "<ul><li>Designing the front-end applications, user interactive (UI) web pages using web technologies like HTML, BootstrapVue and SASS. </li><li>Web designing &amp; development using HTML5, CSS3, TypeScript, Vue JS and Ajax. </li><li>Working in Vue JS components, forms, events, keys Vue-router, and Vue-X concepts and modules and popup modals.</li><li>Create MVC to implement NUXT. JS framework both server and client side rendering to optimize the front end</li><li>Participated with business analyst and UX to understand the business requirements and Product flow</li><li>Design, code and modify websites from layout to function and according to client’s specifications.</li><li>Used Invision to create wireframes (UX)&nbsp;</li><li>Backend we are using .NET </li><li>Working with npm commands and using package.json for managing dependencies and dev-dependencies of&nbsp;node&nbsp;js&nbsp;applications.&nbsp;</li><li>Extensively used SASS (Syntactically awesome style sheets) while styling with CSS3. </li><li>Working on responsive design and developed a single responsive website that could be served to desktop, Tablets and mobile users using VueJs. </li><li>Making&nbsp;Responsive Web Pages&nbsp;using&nbsp;Media Queries&nbsp;and&nbsp;Bootstrap, Material Design lite for styling mobile applications.</li><li>Create site’s layouts and integrate graphics and applications such as login , registration and other content into the site.</li><li>We are using high-charts for reports and dashboards&nbsp;in user profile like charts, gauge and data labels for charts.</li><li>We are using single sign on like Auth0 library for this application.</li><li>Write new code and refactoring an existing codebase and styles.</li><li>We are using third party plugin like Pendo for single page frameworks using to ger user Identity information to share with pendo.</li><li>Involved in daily Stand up’s meetings to keep track of the project status. </li><li>Working with Azure develop&nbsp;for source control.</li><li>Code Reviews.</li></ul><h1><br></h1>"
+        },
+        {
           title: "OnPoint - A Koch Engineered Solutions Company",
           city: "wichita",
           state: "kansas",
           start: "sept-2019",
-          end: "",
+          end: "April-2021",
           name: "Koch Engineering Solutions Team",
           value:
             "<ul><li>Designing the front-end applications, user interactive (UI) web pages using web technologies like HTML, BootstrapVue and SASS. </li><li>Web designing &amp; development using HTML5, CSS3, TypeScript, Vue JS and Ajax. </li><li>Working in Vue JS components, forms, events, keys Vue-router, and Vue-X concepts and modules and popup modals.</li><li>Create MVC to implement NUXT. JS framework both server and client side rendering to optimize the front end</li><li>Participated with business analyst and UX to understand the business requirements and Product flow</li><li>Design, code and modify websites from layout to function and according to client’s specifications.</li><li>Used Invision to create wireframes (UX)&nbsp;</li><li>Backend we are using .NET </li><li>Working with npm commands and using package.json for managing dependencies and dev-dependencies of&nbsp;node&nbsp;js&nbsp;applications.&nbsp;</li><li>Extensively used SASS (Syntactically awesome style sheets) while styling with CSS3. </li><li>Working on responsive design and developed a single responsive website that could be served to desktop, Tablets and mobile users using VueJs. </li><li>Making&nbsp;Responsive Web Pages&nbsp;using&nbsp;Media Queries&nbsp;and&nbsp;Bootstrap, Material Design lite for styling mobile applications.</li><li>Create site’s layouts and integrate graphics and applications such as login , registration and other content into the site.</li><li>We are using high-charts for reports and dashboards&nbsp;in user profile like charts, gauge and data labels for charts.</li><li>We are using single sign on like Auth0 library for this application.</li><li>Write new code and refactoring an existing codebase and styles.</li><li>We are using third party plugin like Pendo for single page frameworks using to ger user Identity information to share with pendo.</li><li>Involved in daily Stand up’s meetings to keep track of the project status. </li><li>Working with Azure develop&nbsp;for source control.</li><li>Code Reviews.</li></ul><h1><br></h1>"
@@ -89,6 +97,51 @@ export default {
         }
       ],
       ProjectsList: [
+        {
+          id: 6,
+          image: "ws.png",
+          title: "Williams-sonoma Inc",
+          modal: {
+            images: [
+              {
+                image: "ws.png"
+              },
+              { image: "WE.png" },
+              { image: "PB.png" },
+              { image: "PK.png" },
+              { image: "MG.png" },
+              { image: "PT.png" }
+            ],
+            title: "Williams-Sonoma Inc",
+            familyBrandTitles: "Family Brands",
+            familyBrands: [
+              {
+                text: "West Elm",
+                url: "https://www.westelm.com/"
+              },
+              {
+                text: "Pottery Barn",
+                url: "https://www.potterybarn.com/?cm_type=gnav"
+              },
+              {
+                text: "Pottery Bran Kids",
+                url: "https://www.potterybarnkids.com/"
+              },
+              {
+                text: "Mark and Graham",
+                url: "https://www.markandgraham.com/"
+              },
+              {
+                text: "PB Teen",
+                url: "https://www.pbteen.com/"
+              },
+
+            ],
+            discription:
+              "William sonoma is an e-commerce domain and deliver high quality products for all home collections items, kids and Kitchen collections.\n WSI having 6 brands those are all family brands which are West Elm, Pottery Barn, Pottery Barn Kids, Mark and Graham and Pb Teen. I worked as part of an Agile team on a Vue application with a strong focus on unit testing using Vue test utils and worked on tailwindCSS integration via internal design system plugin.",
+            link: "https://www.williams-sonoma.com/?cm_type=gnav"
+          }
+        },
         {
           id: 1,
           image: "onpoint-home.png",
@@ -183,20 +236,28 @@ export default {
   padding: 10px;
   margin: 10px;
   box-shadow: 5px 10px 18px #ccc;
+
+  margin-bottom: 20px;
+
   .button-info {
     text-align: right;
+
     a {
       color: #fff;
       text-decoration: none;
     }
   }
+
   &__title {
     font-weight: 600;
     text-align: center;
   }
+
   .list-of-projects {
     display: flex;
     width: 100%;
+    margin: 0 auto;
+
     .card-item {
       margin: 10px;
     }
